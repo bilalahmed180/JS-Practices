@@ -7,6 +7,6 @@ secondnum = Number(secondnum)
 
 let operator = prompt("Which Methode use + , - , * , /");
 
-let result = (operator = "+" ? firstnum + secondnum : error , operator = "-" ? firstnum - secondnum : error , operator = "*" ? firstnum * secondnum : error , operator = "/" ? firstnum / secondnum : error);
+let result = (operator = "+" ? firstnum + secondnum : error , operator = "-" ? firstnum - secondnum : error , operator = "*" ? firstnum * secondnum : error , operator = "/" ? firstnum / secondnum : error , operator = "%" ? firstnum % secondnum : error);
 
 alert(result);
