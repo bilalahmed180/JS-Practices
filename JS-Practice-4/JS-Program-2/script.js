@@ -1,7 +1,12 @@
-let useremail = prompt("Enter Your Email");
-let savedemail = useremail;
+let savedEmail = "bilalahmed@gmail.com";
+let savedPassword = 1234;
 
-let userpassword = prompt("Enter Your Password");
-let savedpassword = userpassword;
 
-console.log("Login Successfull :" , useremail == savedemail && userpassword == savedpassword);
+let userEmail = prompt("Enter your email:");
+let userPassword = prompt("Enter your password:");
+
+
+
+let loginSuccess = userEmail == savedEmail + userPassword == savedPassword;
+
+console.log("Login Successful:", loginSuccess);
