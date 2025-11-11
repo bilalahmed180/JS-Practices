@@ -7,6 +7,6 @@ let userPassword = prompt("Enter your password:");
 
 
 
-let loginSuccess = userEmail == savedEmail + userPassword == savedPassword;
-
-console.log("Login Successful:", loginSuccess);
+(userEmail === savedEmail && userPassword == savedPassword)
+  ? alert("Login Successfully ✅")
+  : alert("Login Failed ❌");
