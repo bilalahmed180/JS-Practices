@@ -1,10 +1,12 @@
 let balance = 1000;
 
+
 const correctPin = "1234";
 
 let Pin = prompt("Enter Your Pin");
 
 let withdrawAmount;
+let depositAmount;
 
 if (Pin === correctPin) {
 
@@ -17,12 +19,16 @@ if (Pin === correctPin) {
         "Enter your choice (1-4):"
     );
 
+    // choice 1 
+
     if (choice === "1") {
         alert("Your balance is: $" + balance);
     }
     
+    // choice 2
+
     else if (choice === "2") {
-        withdrawAmount = (prompt("Enter amount to withdraw:"));
+        withdrawAmount = prompt("Enter amount to withdraw:");
 
         if (withdrawAmount > balance) {
             alert("Insufficient funds!");
@@ -33,8 +39,29 @@ if (Pin === correctPin) {
         }
     }
 
+    // choice 3
 
+    else if (choice === "3") {
+        depositAmount = prompt("Enter Your Deposit Amount");
+        depositAmount = Number(depositAmount);
+    }
 
+    if (depositAmount <= 0) {
+        alert("Try Correct Method");
+    }else{
+        balance += depositAmount;
+        alert("Deposit successful! : $" + balance);
+    }
+    
+    // choice 4
+
+    if (choice === "4") {
+        alert("Thanks For Connecting JS ATM");
+    }
+
+    else {
+        alert("Try Correct Method");
+    }
 }
 
 else {
