@@ -46,22 +46,15 @@ if (Pin === correctPin) {
         depositAmount = Number(depositAmount);
     }
 
-    if (depositAmount <= 0) {
-        alert("Try Correct Method");
-    }else{
-        balance += depositAmount;
-        alert("Deposit successful! : $" + balance);
+    if (balance += depositAmount) {
+         alert("Deposit successful! : $" + balance);
     }
     
     // choice 4
-
-    if (choice === "4") {
-        alert("Thanks For Connecting JS ATM");
+    else{
+         alert("Thanks For Connecting JS ATM");
     }
-
-    else {
-        alert("Try Correct Method");
-    }
+    
 }
 
 else {
