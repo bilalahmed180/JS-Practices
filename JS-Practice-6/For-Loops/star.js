@@ -1,8 +1,8 @@
-let star = "*"
+let star = "*";
 
-let result = ""
+let result = "";
 
 for (let index = 0; index < 5; index++) {
-    result += star
+    result += star;
     console.log(result);
 }
