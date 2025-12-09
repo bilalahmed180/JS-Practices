@@ -12,10 +12,10 @@ if (Pin === correctPin) {
 
     let choice = prompt(
         "Welcome to JS ATM 💳\n\n" +
-        "1️⃣ Check Balance\n" +
+        "1️⃣ Check Balance\n" + 
         "2️⃣ Withdraw\n" +
-        "3️⃣ Deposit\n" +
-        "4️⃣ Exit\n\n" +
+        "3️⃣ Deposit\n" +  
+        "4️⃣ Exit\n\ n" +
         "Enter your choice (1-4):"
     );
 
@@ -27,7 +27,7 @@ if (Pin === correctPin) {
     
     // choice 2
 
-    else if (choice === "2") {
+    else if (choice === "2") { 
         withdrawAmount = prompt("Enter amount to withdraw:");
 
         if (withdrawAmount > balance) {
